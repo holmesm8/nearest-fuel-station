@@ -1,0 +1,13 @@
+<h1>Closest Fueling Station</h1>
+  <ul class="station">
+    <li>Name: <%= @response.name%></li>
+    <li>Address: <%= @response.address%></li>
+    <li>Fuel Type: <%= @response.fuel%></li>
+    <li>Access Times: <%= @response.access%></li>
+  </ul>
+
+  <ul class="directions">
+    <li>Distance: <%= @place.distance%></li>
+    <li>Travel Time: <%= @place.travel_time%></li>
+    <li>Instructions: <%= strip_tags(@place.instructions)%></li>
+  </ul>
